@@ -1,0 +1,36 @@
+{
+  "sources": [
+    "https://iptv-org.github.io/iptv/countries/cn.m3u"
+  ],
+  "outputDirectory": "dist",
+  "downloadTimeoutMs": 30000,
+  "filters": {
+    "countries": [],
+    "languages": [],
+    "categories": [],
+    "includeNames": [],
+    "excludeNames": [],
+    "excludeLabels": [
+      "Geo-blocked"
+    ],
+    "minimumVerticalResolution": 0
+  },
+  "availability": {
+    "enabled": true,
+    "parallel": 8,
+    "timeoutMs": 15000,
+    "rejectStatusCodes": [
+      "ECONNREFUSED",
+      "ENOTFOUND",
+      "ENETUNREACH",
+      "EPROTO",
+      "HTTP_404_",
+      "HTTP_404_NOT_FOUND",
+      "HTTP_404_UNKNOWN_ERROR",
+      "HTTP_410_GONE"
+    ]
+  },
+  "safety": {
+    "minimumOutputStreams": 1
+  }
+}
