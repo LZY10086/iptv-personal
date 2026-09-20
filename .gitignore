@@ -1,0 +1,11 @@
+node_modules
+.artifacts
+.secrets
+.actrc
+.DS_Store
+/.gh-pages/
+/.api/
+.env
+/temp/
+/.personal/
+/dist/
